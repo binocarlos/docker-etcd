@@ -1,7 +1,7 @@
 docker-etcd
 ===========
 
-Dockerfile to build etcd -> Docker Index trusted builds
+Dockerfile to build etcd
 
 ```
 FROM ubuntu:12.04
