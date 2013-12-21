@@ -1,9 +1,3 @@
-docker-etcd
-===========
-
-Dockerfile to build etcd -> Docker Index trusted builds
-
-```
 FROM ubuntu:12.04
 RUN apt-get update
 RUN apt-get install -y python-software-properties git
@@ -14,4 +8,3 @@ RUN git clone https://github.com/coreos/etcd.git /opt/etcd
 RUN cd /opt/etcd && ./build
 EXPOSE 4001 7001
 ENTRYPOINT ["/opt/etcd/etcd", "-c", "0.0.0.0:4001", "-s", "0.0.0.0:7001"]
-```
